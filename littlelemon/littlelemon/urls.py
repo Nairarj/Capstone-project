@@ -27,4 +27,6 @@ urlpatterns = [
     path('restaurant/', include('restaurant.urls')),
     path('restaurant/menu/', include('restaurant.urls')),  # New line to include restaurant menu URLs
     path('restaurant/booking/', include(router.urls)),  # BookingViewSet URLs
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken')),
 ]
